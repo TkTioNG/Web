@@ -176,21 +176,51 @@
                         </div>
                     </div>
 
-                    <div id="order_details" runat="server"> 
+                    <div id="order_details" runat="server">
                         <table id="myTable" class="table">
                             <th>Product</th>
                             <th>Warehouse Location</th>
                             <th>Quantity</th>
                             <th>Discount</th>
                             <tr>
-                                <td><input type="text" id="txtProduct0" /></td>
-                                <td><select id="txtWarehouselocation0">
+                                <td>
+                                    <select id="txtProduct0"  runat="server">
+                                        <optgroup label="Music & Entertainment" runat="server">
+                                            <option value="P00001" selected="selected">Oppa Gangnam Style 01</option>
+                                            <option value="P00002">Chopin Ballade No.1</option>
+                                            <option value="P00003">Rachmaninoff Piano Concerto No.2</option>
+                                            <option value="P00004">Chopin Waltz Op.64 No.2</option>
+                                            <option value="P00005">Chopin Nocturne Op.17 No.1</option>
+                                            <option value="P00006">Fantasie Impromptu - Chopin</option>
+                                            <option value="P00007">Beethoven Symphony No.5</option>
+                                            <option value="P00008">Mahler Symphony No.5</option>
+                                            <option value="P00009">Chopin Ballade No.4</option>
+                                            <option value="P00010">Chopin Etude Op.10 No.10</option>
+                                        </optgroup>
+                                        <optgroup label="Shoes & Socks" runat="server">
+                                            <option value="P00011">Dior X AJ Crossover</option>
+                                            <option value="P00012">Yezzy 100</option>
+                                            <option value="P00013">Puma Runner</option>
+                                            <option value="P00014">Good Asadi Sandals</option>
+                                            <option value="P00015">Highlight Under Armour</option>
+                                        </optgroup>
+                                        <optgroup label="Clothes & Fabrics" runat="server">
+                                            <option value="P00016">Off White AW Hoodies</option>
+                                            <option value="P00017">Stones Flower Shirt</option>
+                                            <option value="P00018">FO Spring Teens Shorts</option>
+                                            <option value="P00019">H&M Khaki Longs</option>
+                                            <option value="P00020">UNIQLO Loose Hoodies</option>
+                                        </optgroup>
+                                    </select></td>
+                                <td>
+                                    <select id="txtWarehouselocation0">
                                         <option value="W00001" selected="selected">Penang, Malaysia</option>
                                         <option value="W00002">Johor, Malaysia</option>
                                         <option value="W00003">Yiwu, China</option>
                                         <option value="W00004">Guang Zhou, China</option>
                                     </select></td>
-                                <td><input type="text" id="txtQuantity0" value="1" /></td>
+                                <td>
+                                    <input type="text" id="txtQuantity0" value="1" /></td>
                                 <td>
                                     <select id="txtDiscount0">
                                         <option selected="selected" value="0.00">0 %</option>
@@ -306,7 +336,7 @@
 
                             opt = document.createElement("option");
                             opt.value = 'P00019';
-                            opt.text = 'H&M Khaki Longs'; 
+                            opt.text = 'H&M Khaki Longs';
                             prod.add(opt, prod.options[18]);
 
                             opt = document.createElement("option");
@@ -330,7 +360,7 @@
                             opt.appendChild(prod.options[9]);
                             prod.insertBefore(opt, prod.options[0]);
 
-                                                        
+
                             opt = document.createElement("optgroup");
                             opt.setAttribute("label", "Shoes & Socks");
                             opt.appendChild(prod.options[10]);
@@ -340,7 +370,7 @@
                             opt.appendChild(prod.options[14]);
                             prod.insertBefore(opt, prod.options[10]);
 
-                            
+
                             opt = document.createElement("optgroup");
                             opt.setAttribute("label", "Clothes & Fabrics");
                             opt.appendChild(prod.options[15]);
@@ -361,7 +391,7 @@
                             var t1 = document.createElement("input");
                             t1.id = "txtProduct" + index;
                             var test = productList(index);
-
+                            test.id = "txtProduct" + index;
                             cell1.appendChild(test);
                             var cell2 = row.insertCell(1);
                             var t2 = document.createElement("select");
@@ -416,16 +446,17 @@
                     </script>
                 </div>
             </div>
-        </div>        
+        </div>
 
-        
-        <div style="text-align: center; width: 50%; margin: auto; clear: both"> <br />
-        <button type="button" id="btnCancel" class="btn btn-danger" data-toggle="modal" data-target="#deleteOrderModal">
-            Cancel Order
-        </button>
-        <button type="button" id="btnSave" class="btn btn-success" style="margin-right: 30px;" data-toggle="modal" data-target="#completeOrderModal">
-            Create Order
-        </button>
+
+        <div style="text-align: center; width: 50%; margin: auto; clear: both">
+            <br />
+            <button type="button" id="btnCancel" class="btn btn-danger" data-toggle="modal" data-target="#deleteOrderModal">
+                Cancel Order
+            </button>
+            <button type="button" id="btnSave" class="btn btn-success" style="margin-right: 30px;" data-toggle="modal" data-target="#completeOrderModal">
+                Create Order
+            </button>
         </div>
     </div>
 

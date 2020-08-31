@@ -24,13 +24,13 @@ namespace Web
         protected global::System.Web.UI.WebControls.Button btnYes;
 
         /// <summary>
-        /// custID control.
+        /// prodID control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText custID;
+        protected global::System.Web.UI.WebControls.DropDownList prodID;
 
         /// <summary>
         /// custName control.
@@ -60,13 +60,13 @@ namespace Web
         protected global::System.Web.UI.HtmlControls.HtmlInputText email;
 
         /// <summary>
-        /// salespersonID control.
+        /// warehouseID control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText salespersonID;
+        protected global::System.Web.UI.WebControls.DropDownList warehouseID;
 
         /// <summary>
         /// salespersonName control.
@@ -85,23 +85,5 @@ namespace Web
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl date;
-
-        /// <summary>
-        /// time control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl time;
-
-        /// <summary>
-        /// Button1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button1;
     }
 }

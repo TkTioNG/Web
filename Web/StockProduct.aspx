@@ -46,6 +46,7 @@
         .auto-style24 {
             width: 121px;
             height: 40px;
+            vertical-align: top;
         }
 
         .auto-style25 {
@@ -65,28 +66,37 @@
 <body>
     <div>
         <h1 id="title">Inventory Details</h1>
+
         <div id="div2">
-            <h3 runat="server" id="productname">Item</h3>
+
+            <button type="button" id="btnGoBack" class="btn btn-primary" style="float: right; margin-top: 28px; margin-right: 45px;" onclick="window.location.href='Store.aspx';">
+                < Go Back
+            </button>
+
+            <br />
+            <h3 runat="server" id="productname" style="float:left; margin-left: 14px;">Item</h3>
+
             <form id="form" runat="server">
-                <table id="table1" style="margin-left: 60px;">
+                <br /><br /><br />
+                <table id="table1" style="margin-left: 60px; clear: both;">
                     <tr>
-                        <td  class="auto-style21">Category:</td>
+                        <td class="auto-style21">Category:</td>
                         <td class="auto-style21">
                             <input id="txtCategory" runat="server" style="width: 222px;" class="editable" type="text" readonly="true" />
                         </td>
                         <td class="auto-style20"></td>
                         <td class="auto-style21">Reorder Level:</td>
                         <td class="auto-style21">
-                            <input id="txtReorderLevel1" runat="server" style="width: 222px;" class="editable" type="text" readonly="true" /></td>                            
+                            <input id="txtReorderLevel1" runat="server" style="width: 222px;" class="editable" type="text" readonly="true" /></td>
                     </tr>
                     <tr>
-                        <td  class="auto-style21">Location:</td>
+                        <td class="auto-style21">Location:</td>
                         <td class="auto-style21">
                             <input id="txtLocation" runat="server" style="width: 222px;" class="editable" type="text" readonly="true" />
-                        <td class="auto-style20"></td>
-                        <td class="auto-style21">Target Stock Level:</td>
-                        <td class="auto-style21">
-                            <input id="txtTargetStockLevel" runat="server" style="width: 222px;" class="editable" type="text" readonly="true" /></td>
+                            <td class="auto-style20"></td>
+                            <td class="auto-style21">Target Stock Level:</td>
+                            <td class="auto-style21">
+                                <input id="txtTargetStockLevel" runat="server" style="width: 222px;" class="editable" type="text" readonly="true" /></td>
                     </tr>
                     <tr>
                         <td class="auto-style14">Manufacturer:</td>
@@ -102,7 +112,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <td  class="auto-style21">Supplier:</td>
+                        <td class="auto-style21">Supplier:</td>
                         <td class="auto-style21">
                             <input id="txtSupplier" runat="server" style="width: 222px;" class="editable" type="text" readonly="true" />
                         </td>
@@ -123,39 +133,39 @@
 
                 <table id="table2" class="auto-style25" style="margin-left: 60px;">
                     <tr>
-                        <td class="auto-style24" >Description:&nbsp;</td>
+                        <td class="auto-style24">Description:&nbsp;</td>
                         <td class="auto-style23">
-                            <textarea id="txtDescription" runat="server" style="width: 222px;" class="editable" type="text" readonly="readonly" rows="5" ></textarea>
+                            <textarea id="txtDescription" runat="server" style="width: 622px;" class="editable" type="text" readonly="readonly" rows="5"></textarea>
                         </td>
                     </tr>
                     <tr>
-                        <td class="auto-style24" >Comments:&nbsp;</td>
+                        <td class="auto-style24">Comments:&nbsp;</td>
                         <td class="auto-style23">
-                            <textarea id="txtComments" runat="server" style="width: 622px;" class="editable" type="text" readonly="readonly" rows="5" ></textarea>
+                            <textarea id="txtComments" runat="server" style="width: 622px;" class="editable" type="text" readonly="readonly" rows="5"></textarea>
                         </td>
                     </tr>
                 </table>
 
                 <table id="table3" style="margin-left: 60px;">
                     <tr>
-                        <td  class="auto-style26">Stock Unit:</td>
+                        <td class="auto-style26">Stock Unit:</td>
                         <td class="auto-style21">
                             <input id="txtStockUnit" runat="server" style="width: 222px;" class="editable" type="text" readonly="true" /></td>
                         <td class="auto-style27"></td>
-                        <td >Current Stock:</td>
+                        <td>Current Stock:</td>
                         <td class="auto-style21">
                             <input id="txtCurrentStock" runat="server" style="width: 222px;" class="editable" type="text" readonly="true" />
                         </td>
                     </tr>
                 </table>
 
-                <button type="button" id="btnEdit" class="btn btn-primary" style="float: right; margin-top: 25px; margin-right: 60px;" onclick="canEdit()">
+                <button type="button" id="btnEdit" class="btn btn-primary" style="float: right; margin-top: 25px; margin-right: 60px; margin-bottom: 40px;" onclick="canEdit()">
                     Edit
                 </button>
-                <button type="button" id="btnSave" class="btn btn-success" style="display: none; float: right; margin-top: 25px; margin-right: 60px;" onclick="cannotEdit()">
+                <button type="button" id="btnSave" class="btn btn-success" style="display: none; float: right; margin-top: 25px; margin-right: 60px; margin-bottom: 40px;" onclick="cannotEdit()">
                     Save
                 </button>
-                <button type="button" id="btnCancel" class="btn btn-danger" style="display: none; float: right; margin-top: 25px; margin-right: 25px;" onclick="cannotEdit()">
+                <button type="button" id="btnCancel" class="btn btn-danger" style="display: none; float: right; margin-top: 25px; margin-right: 25px; margin-bottom: 40px;" onclick="cannotEdit()">
                     Cancel
                 </button>
 

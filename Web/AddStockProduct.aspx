@@ -38,7 +38,7 @@
 
                 <!-- Right-aligned links -->
                 <div class="topnav-right">
-                    <a href="Order.aspx">Close</a>
+                    <a href="Store.aspx">Close</a>
                 </div>
             </div>
 
@@ -77,7 +77,7 @@
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
-                            <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="window.location.href='Order.aspx';">Yes</button>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="window.location.href='Store.aspx';">Yes</button>
                         </div>
                     </div>
                 </div>
@@ -95,7 +95,7 @@
                             The product has been successfully added.
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="window.location.href='StockProduct.aspx?stockproductid=<%= "P00002W00002" %>';">OK</button>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="window.location.href='StockProduct.aspx?stockproductid=<%= prodID.SelectedValue + warehouseID.SelectedValue %>';">OK</button>
                             <!--<asp:Button ID="btnYes" runat="server" Text="OK" CssClass="btn btn-primary" data-dismiss="modal" OnClick="btnYes_Click" />-->
                         </div>
                     </div>
@@ -105,38 +105,69 @@
             <div id="filter" class="filter">
                 <div class="form-part filter-left" id="filter-left">
                     <div class="form-group">
-                        <label>Product ID</label><br>
-                        <input id="custID" type="text" class="form-control" runat="server" name="customer" value="C00001">
+                        <label>Product Name</label><br>
+                        <asp:DropDownList ID="prodID" runat="server" CssClass="form-control">
+                            <asp:ListItem Value="P00001" Selected="True">Oppa Gangnam Style 01</asp:ListItem>
+                            <asp:ListItem Value="P00002">Chopin Ballade No.1</asp:ListItem>
+                            <asp:ListItem Value="P00003">Rachmaninoff Piano Concerto No.2</asp:ListItem>
+                            <asp:ListItem Value="P00004">Chopin Waltz Op.64 No.2</asp:ListItem>
+                            <asp:ListItem Value="P00005">Chopin Nocturne Op.17 No.1</asp:ListItem>
+                            <asp:ListItem Value="P00006">Fantasie Impromptu - Chopin</asp:ListItem>
+                            <asp:ListItem Value="P00007">Beethoven Symphony No.5</asp:ListItem>
+                            <asp:ListItem Value="P00008">Mahler Symphony No.5</asp:ListItem>
+                            <asp:ListItem Value="P00009">Chopin Ballade No.4</asp:ListItem>
+                            <asp:ListItem Value="P00010">Chopin Etude Op.10 No.10</asp:ListItem>
+                            <asp:ListItem Value="P00011">Dior X AJ Crossover</asp:ListItem>
+                            <asp:ListItem Value="P00012">Yezzy 100</asp:ListItem>
+                            <asp:ListItem Value="P00013">Puma Runner</asp:ListItem>
+                            <asp:ListItem Value="P00014">Good Asadi Sandals</asp:ListItem>
+                            <asp:ListItem Value="P00015">Highlight Under Armour</asp:ListItem>
+                            <asp:ListItem Value="P00016">Off White AW Hoodies</asp:ListItem>
+                            <asp:ListItem Value="P00017">Stones Flower Shirt</asp:ListItem>
+                            <asp:ListItem Value="P00018">FO Spring Teens Shorts</asp:ListItem>
+                            <asp:ListItem Value="P00019">H&M Khaki Longs</asp:ListItem>
+                            <asp:ListItem Value="P00020">UNIQLO Loose Hoodies</asp:ListItem>
+                        </asp:DropDownList>
                     </div>
                     <div class="form-group">
-                        <label>Customer Name</label><br>
-                        <input id="custName" type="text" class="form-control" runat="server" name="customer" value="Customer 1">
+                        <label>Reorder Level</label><br>
+                        <input id="custName" type="text" class="form-control" runat="server" name="customer" value="20000">
                     </div>
                     <div class="form-group">
-                        <label>From</label>
-                        <input id="contact" type="text" class="form-control" runat="server" name="contact" value="Your House">
+                        <label>Target Stock Level</label>
+                        <input id="contact" type="text" class="form-control" runat="server" name="contact" value="30000">
                     </div>
                     <div class="form-group">
-                        <label>Ship To</label>
-                        <input id="email" type="text" class="form-control" runat="server" name="email" value="His House">
+                        <label>Current Stock</label>
+                        <input id="email" type="text" class="form-control" runat="server" name="email" value="25966">
                     </div>
                 </div>
                 <div class="form-part filter-right" id="filter-right">
                     <div class="form-group">
-                        <label>Salesperson ID</label><br>
-                        <input id="salespersonID" type="text" class="form-control" runat="server" name="salesperson" value="S00001">
+                        <label>Warehouse Location</label><br>
+                        <asp:DropDownList ID="warehouseID" runat="server" CssClass="form-control">
+                            <asp:ListItem Value="W00001" Selected="True">Penang, Malaysia</asp:ListItem>
+                            <asp:ListItem Value="W00002">Johor, Malaysia</asp:ListItem>
+                            <asp:ListItem Value="W00003">Yiwu, China</asp:ListItem>
+                            <asp:ListItem Value="W00004">Guang Zhou, China</asp:ListItem>
+                        </asp:DropDownList>
                     </div>
                     <div class="form-group">
-                        <label>Salesperson Name</label><br>
+                        <label>Stock Product Status</label><br>
                         <input id="salespersonName" type="text" class="form-control" runat="server" name="salesperson" value="Salesperson 1">
                     </div>
                     <div class="form-group">
-                        <label>Order Date</label>
-                        <input id="date" type="datetime" class="form-control" runat="server" name="editable" value="01/09/2020">
+                        <label>Add Date</label>
+                        <input id="date" type="datetime" class="form-control" runat="server" value="01/09/2020" readonly="readonly">
                     </div>
                     <div class="form-group">
-                        <label>Order Time</label>
-                        <input id="time" type="time" class="form-control" runat="server" name="editable" value="18:40:00">
+                        <label>Current Unit</label>
+                        <select class="form-control">
+                            <option value="Unit">Unit</option>
+                            <option value="KG">KG</option>
+                            <option value="Liter">Liter</option>
+                            <option value="Meter">Meter</option>
+                        </select>
                     </div>
                 </div>
             </div>
@@ -164,7 +195,6 @@
                 <button type="button" id="btnSave" class="btn btn-success" style="margin-right: 30px;" data-toggle="modal" data-target="#completeOrderModal">
                     Create Product
                 </button>
-                <asp:Button ID="Button1" runat="server" Text="Button" OnClick="btnYes_Click" />
             </div>
         </div>
     </form>
