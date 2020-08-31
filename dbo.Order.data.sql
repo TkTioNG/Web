@@ -1,25 +1,25 @@
-﻿INSERT INTO "Order" values (1000000001,'2020-07-01','12:00:00','Your House','His House','C00001','S00001','Pending');
-INSERT INTO "Order" values (1000000002,'2020-07-02','12:00:00','Your House','His House','C00001','S00002','Pending');
-INSERT INTO "Order" values (1000000003,'2020-07-03','12:00:00','Your House','His House','C00001','S00003','Pending');
-INSERT INTO "Order" values (1000000004,'2020-07-04','12:00:00','Your House','His House','C00001','S00004','Pending');
-INSERT INTO "Order" values (1000000005,'2020-07-05','12:00:00','Your House','His House','C00001','S00005','Pending');
-INSERT INTO "Order" values (1000000006,'2020-07-06','12:00:00','Your House','His House','C00002','S00001','Pending');
-INSERT INTO "Order" values (1000000007,'2020-07-07','12:00:00','Your House','His House','C00002','S00002','Pending');
-INSERT INTO "Order" values (1000000008,'2020-07-08','12:00:00','Your House','His House','C00002','S00003','Pending');
-INSERT INTO "Order" values (1000000009,'2020-07-09','12:00:00','Your House','His House','C00002','S00004','Pending');
-INSERT INTO "Order" values (1000000010,'2020-08-10','12:00:00','Your House','His House','C00002','S00005','Pending');
-INSERT INTO "Order" values (1000000011,'2020-08-01','12:00:00','Your House','His House','C00003','S00001','Pending');
-INSERT INTO "Order" values (1000000012,'2020-08-02','12:00:00','Your House','His House','C00003','S00002','Pending');
-INSERT INTO "Order" values (1000000013,'2020-08-03','12:00:00','Your House','His House','C00003','S00003','Pending');
-INSERT INTO "Order" values (1000000014,'2020-08-04','12:00:00','Your House','His House','C00003','S00004','Pending');
-INSERT INTO "Order" values (1000000015,'2020-08-05','12:00:00','Your House','His House','C00003','S00005','Pending');
-INSERT INTO "Order" values (1000000016,'2020-08-06','12:00:00','Your House','His House','C00004','S00001','Pending');
-INSERT INTO "Order" values (1000000017,'2020-08-07','12:00:00','Your House','His House','C00004','S00002','Pending');
-INSERT INTO "Order" values (1000000018,'2020-08-08','12:00:00','Your House','His House','C00004','S00003','Pending');
-INSERT INTO "Order" values (1000000019,'2020-08-09','12:00:00','Your House','His House','C00004','S00004','Pending');
-INSERT INTO "Order" values (1000000020,'2020-08-10','12:00:00','Your House','His House','C00004','S00005','Pending');
-INSERT INTO "Order" values (1000000021,'2020-09-01','12:00:00','Your House','His House','C00005','S00001','Pending');
-INSERT INTO "Order" values (1000000022,'2020-09-02','12:00:00','Your House','His House','C00005','S00002','Pending');
-INSERT INTO "Order" values (1000000023,'2020-09-03','12:00:00','Your House','His House','C00005','S00003','Pending');
-INSERT INTO "Order" values (1000000024,'2020-09-04','12:00:00','Your House','His House','C00005','S00004','Pending');
-INSERT INTO "Order" values (1000000025,'2020-09-05','12:00:00','Your House','His House','C00005','S00005','Pending');
+﻿INSERT INTO [dbo].[Order] ([OrderNo], [Date], [Time], [Froms], [Tos], [CustID], [SalespersonID], [OrderStatus]) VALUES (1000000001, N'2020-07-01', N'12:00:00', NULL, NULL, N'C00001', N'S00001', N'Pending')
+INSERT INTO [dbo].[Order] ([OrderNo], [Date], [Time], [Froms], [Tos], [CustID], [SalespersonID], [OrderStatus]) VALUES (1000000002, N'2020-07-02', N'12:00:00', NULL, NULL, N'C00001', N'S00002', N'Pending')
+INSERT INTO [dbo].[Order] ([OrderNo], [Date], [Time], [Froms], [Tos], [CustID], [SalespersonID], [OrderStatus]) VALUES (1000000003, N'2020-07-03', N'12:00:00', NULL, NULL, N'C00001', N'S00003', N'Pending')
+INSERT INTO [dbo].[Order] ([OrderNo], [Date], [Time], [Froms], [Tos], [CustID], [SalespersonID], [OrderStatus]) VALUES (1000000004, N'2020-07-04', N'12:00:00', NULL, NULL, N'C00001', N'S00004', N'Pending')
+INSERT INTO [dbo].[Order] ([OrderNo], [Date], [Time], [Froms], [Tos], [CustID], [SalespersonID], [OrderStatus]) VALUES (1000000005, N'2020-07-05', N'12:00:00', NULL, NULL, N'C00001', N'S00005', N'Pending')
+INSERT INTO [dbo].[Order] ([OrderNo], [Date], [Time], [Froms], [Tos], [CustID], [SalespersonID], [OrderStatus]) VALUES (1000000006, N'2020-07-06', N'12:00:00', NULL, NULL, N'C00002', N'S00001', N'Pending')
+INSERT INTO [dbo].[Order] ([OrderNo], [Date], [Time], [Froms], [Tos], [CustID], [SalespersonID], [OrderStatus]) VALUES (1000000007, N'2020-07-07', N'12:00:00', NULL, NULL, N'C00002', N'S00002', N'Pending')
+INSERT INTO [dbo].[Order] ([OrderNo], [Date], [Time], [Froms], [Tos], [CustID], [SalespersonID], [OrderStatus]) VALUES (1000000008, N'2020-07-08', N'12:00:00', NULL, NULL, N'C00002', N'S00003', N'Pending')
+INSERT INTO [dbo].[Order] ([OrderNo], [Date], [Time], [Froms], [Tos], [CustID], [SalespersonID], [OrderStatus]) VALUES (1000000009, N'2020-07-09', N'12:00:00', NULL, NULL, N'C00002', N'S00004', N'Pending')
+INSERT INTO [dbo].[Order] ([OrderNo], [Date], [Time], [Froms], [Tos], [CustID], [SalespersonID], [OrderStatus]) VALUES (1000000010, N'2020-08-10', N'12:00:00', NULL, NULL, N'C00002', N'S00005', N'Pending')
+INSERT INTO [dbo].[Order] ([OrderNo], [Date], [Time], [Froms], [Tos], [CustID], [SalespersonID], [OrderStatus]) VALUES (1000000011, N'2020-08-01', N'12:00:00', NULL, NULL, N'C00003', N'S00001', N'Pending')
+INSERT INTO [dbo].[Order] ([OrderNo], [Date], [Time], [Froms], [Tos], [CustID], [SalespersonID], [OrderStatus]) VALUES (1000000012, N'2020-08-02', N'12:00:00', NULL, NULL, N'C00003', N'S00002', N'Pending')
+INSERT INTO [dbo].[Order] ([OrderNo], [Date], [Time], [Froms], [Tos], [CustID], [SalespersonID], [OrderStatus]) VALUES (1000000013, N'2020-08-03', N'12:00:00', NULL, NULL, N'C00003', N'S00003', N'Pending')
+INSERT INTO [dbo].[Order] ([OrderNo], [Date], [Time], [Froms], [Tos], [CustID], [SalespersonID], [OrderStatus]) VALUES (1000000014, N'2020-08-04', N'12:00:00', NULL, NULL, N'C00003', N'S00004', N'Pending')
+INSERT INTO [dbo].[Order] ([OrderNo], [Date], [Time], [Froms], [Tos], [CustID], [SalespersonID], [OrderStatus]) VALUES (1000000015, N'2020-08-05', N'12:00:00', NULL, NULL, N'C00003', N'S00005', N'Pending')
+INSERT INTO [dbo].[Order] ([OrderNo], [Date], [Time], [Froms], [Tos], [CustID], [SalespersonID], [OrderStatus]) VALUES (1000000016, N'2020-08-06', N'12:00:00', NULL, NULL, N'C00004', N'S00001', N'Pending')
+INSERT INTO [dbo].[Order] ([OrderNo], [Date], [Time], [Froms], [Tos], [CustID], [SalespersonID], [OrderStatus]) VALUES (1000000017, N'2020-08-07', N'12:00:00', NULL, NULL, N'C00004', N'S00002', N'Pending')
+INSERT INTO [dbo].[Order] ([OrderNo], [Date], [Time], [Froms], [Tos], [CustID], [SalespersonID], [OrderStatus]) VALUES (1000000018, N'2020-08-08', N'12:00:00', NULL, NULL, N'C00004', N'S00003', N'Pending')
+INSERT INTO [dbo].[Order] ([OrderNo], [Date], [Time], [Froms], [Tos], [CustID], [SalespersonID], [OrderStatus]) VALUES (1000000019, N'2020-08-09', N'12:00:00', NULL, NULL, N'C00004', N'S00004', N'Pending')
+INSERT INTO [dbo].[Order] ([OrderNo], [Date], [Time], [Froms], [Tos], [CustID], [SalespersonID], [OrderStatus]) VALUES (1000000020, N'2020-08-10', N'12:00:00', NULL, NULL, N'C00004', N'S00005', N'Pending')
+INSERT INTO [dbo].[Order] ([OrderNo], [Date], [Time], [Froms], [Tos], [CustID], [SalespersonID], [OrderStatus]) VALUES (1000000021, N'2020-09-01', N'12:00:00', NULL, NULL, N'C00005', N'S00001', N'Pending')
+INSERT INTO [dbo].[Order] ([OrderNo], [Date], [Time], [Froms], [Tos], [CustID], [SalespersonID], [OrderStatus]) VALUES (1000000022, N'2020-09-02', N'12:00:00', NULL, NULL, N'C00005', N'S00002', N'Pending')
+INSERT INTO [dbo].[Order] ([OrderNo], [Date], [Time], [Froms], [Tos], [CustID], [SalespersonID], [OrderStatus]) VALUES (1000000023, N'2020-09-03', N'12:00:00', NULL, NULL, N'C00005', N'S00003', N'Pending')
+INSERT INTO [dbo].[Order] ([OrderNo], [Date], [Time], [Froms], [Tos], [CustID], [SalespersonID], [OrderStatus]) VALUES (1000000024, N'2020-09-04', N'12:00:00', NULL, NULL, N'C00005', N'S00004', N'Pending')
+INSERT INTO [dbo].[Order] ([OrderNo], [Date], [Time], [Froms], [Tos], [CustID], [SalespersonID], [OrderStatus]) VALUES (1000000025, N'2020-09-05', N'12:00:00', NULL, NULL, N'C00005', N'S00005', N'Cancel')

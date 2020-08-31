@@ -5,13 +5,13 @@
         <h1>Order Sub-System</h1>
         <div class="row">
             <div class="col-md-3">
-                <a href="http://www.asp.net" class="btn btn-primary btn-lg">Create New Order</a>
+                <a href="AddOrder.aspx" class="btn btn-primary btn-lg">Create New Order</a>
             </div>
             <div class="col-md-3">
                 <a href="http://www.asp.net" class="btn btn-primary btn-lg">Produce Sales Report</a>
             </div>
             <div class="col-md-3">
-                <a href="http://www.asp.net" class="btn btn-primary btn-lg">Retrieve Cancel Order</a>
+                <asp:Button ID="Button1" runat="server" Text="Retrieve Cancel Order" CssClass="btn btn-primary btn-lg" OnClick="Button1_Click" />
             </div>
         </div>
     </div>
@@ -19,7 +19,7 @@
     <h2>Customer Order List</h2>
     <div class="form-inline my-2 my-lg-0">
         <asp:Button class="btn btn-outline-success my-2 my-sm-0" style="float: right;" OnClick="searchOrder" Text="Search" runat="server" /> 
-        <input id="searchbox" class="form-control mr-sm-2" type="search" style="float: right; margin-right: 20px;" placeholder="Search" aria-label="Search" runat="server">
+        <asp:TextBox ID="searchbox" runat="server" CssClass="form-control mr-sm-2" style="float: right; margin-right: 20px;" AutoPostBack="true"></asp:TextBox>
     </div>
 
     <style>

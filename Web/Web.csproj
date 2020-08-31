@@ -110,6 +110,7 @@
     <Content Include="CSS\AddOrder.css" />
     <Content Include="CSS\Invoice.css" />
     <Content Include="CSS\StockProduct.css" />
+    <Content Include="SalesReport.aspx" />
     <Content Include="StockProduct.aspx" />
     <Content Include="Store.aspx" />
     <Content Include="Order.aspx" />
@@ -189,6 +190,13 @@
       <DependentUpon>AddStockProduct.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="SalesReport.aspx.cs">
+      <DependentUpon>SalesReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SalesReport.aspx.designer.cs">
+      <DependentUpon>SalesReport.aspx</DependentUpon>
+    </Compile>
     <Compile Include="StockProduct.aspx.cs">
       <DependentUpon>StockProduct.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
