@@ -1,0 +1,23 @@
+﻿#title {
+    text-align: center;
+}
+
+#div2 {
+    border: 2px solid black;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: auto;
+}
+
+h2 {
+    padding-left: 5%
+}
+
+h3 {
+    padding-left: 5%
+}
+
+.head {
+    text-align: center;
+}

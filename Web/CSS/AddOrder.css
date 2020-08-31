@@ -1,0 +1,105 @@
+﻿#title {
+    text-align: center;
+}
+
+#div2 {
+    border: 2px solid black;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: auto;
+}
+
+.head {
+    text-align: center;
+}
+
+.contact {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
+}
+
+    .contact li {
+        display: inline;
+    }
+
+    .contact a {
+        display: inline-block;
+        padding: 8px;
+    }
+
+#serialNum {
+    text-align: right;
+    padding-right: 10%;
+}
+
+#from, #ship, #orderNo, #to, #customerID, #customerName {
+    padding-left: 25%;
+}
+
+#table {
+    padding-left: 7%;
+    padding-right: 7%;
+}
+
+#date, #time, #salespersonID, #salespersonName {
+    text-align: right;
+    padding-right: 20%;
+}
+
+#recipientDetails {
+    margin-top: 25%;
+    text-align: right;
+    padding-right: 20%;
+}
+
+.button {
+    background-color: #252525;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+.s1 {
+    margin-right: 9%
+}
+
+.s2 {
+    margin-right: 13%
+}
+
+#left {
+    float: left;
+    width: 45%;
+}
+
+#right {
+    float: right;
+    width: 45%;
+}
+
+table {
+    border-collapse: collapse;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+td, th {
+    border: 1px solid black;
+    text-align: center;
+    padding: 3px;
+}
+
+    td input {
+        border: none;
+    }

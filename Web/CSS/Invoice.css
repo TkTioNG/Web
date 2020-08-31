@@ -1,0 +1,108 @@
+﻿#title {
+    text-align: center;
+}
+
+#div2 {
+    border: 2px solid black;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: auto;
+}
+
+.head {
+    text-align: center;
+}
+
+.contact {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
+}
+
+    .contact li {
+        display: inline;
+    }
+
+    .contact a {
+        display: inline-block;
+        padding: 8px;
+    }
+
+#serialNum {
+    text-align: right;
+    padding-right: 10%;
+}
+
+#from, #ship {
+    padding-left: 10%;
+}
+
+#date {
+    text-align: right;
+    padding-right: 20%;
+}
+
+#invoiceDetails {
+    margin-top: 15%;
+    text-align: right;
+    padding-right: 20%;
+}
+
+.s1 {
+    margin-right: 9%;
+}
+
+.s2 {
+    margin-right: 13%;
+}
+
+#left {
+    float: left;
+    width: 45%;
+}
+
+#right {
+    float: right;
+    width: 45%;
+}
+
+table {
+    border-collapse: collapse;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+td, th {
+    border: 1px solid black;
+    text-align: center;
+    padding: 3px;
+}
+
+#sign {
+    padding-left: 5%;
+    float: left;
+    margin-bottom: 30px;
+}
+
+.nbc {
+    text-align: right;
+    border: none;
+    vertical-align: bottom;
+    padding: 0 !important;
+    height: 36px;
+    width: 70px;
+}
+
+    .nbc.bc {
+        border-bottom: 1px solid black;
+        width: 170px;
+        text-align: center;
+    }
+    .nbc.bc.long {
+        width: 240px;
+    }

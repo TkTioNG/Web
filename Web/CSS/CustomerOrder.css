@@ -1,0 +1,93 @@
+﻿h1 {
+    text-align: center;
+}
+
+#body {
+    width: 85%;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: auto;
+    border: 1px solid lightgray;
+}
+
+.filter {
+    border: 1px solid gray;
+    border-radius: 2px;
+    padding: 15px 25px 15px 25px;
+    margin-bottom: 10px;
+    overflow: auto;
+}
+
+.filter-left {
+    float: left;
+    width: 48%;
+}
+
+.filter-right {
+    float: right;
+    width: 48%;
+}
+
+#details {
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid black;
+    overflow: auto;
+}
+
+    #details a {
+        color: black;
+        font-weight: bold;
+    }
+
+#total {
+    text-align: right;
+}
+
+#top-nav {
+    background: gray;
+}
+
+    #top-nav a {
+        color: white;
+    }
+
+.topnav {
+    position: relative;
+    overflow: hidden;
+    background-color: #333;
+}
+
+    .topnav a {
+        float: left;
+        color: white !important;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        font-weight: normal !important;
+    }
+
+        .topnav a:hover {
+            color: aquamarine !important;
+            font-weight: bold !important;
+        }
+
+        .topnav a.active {
+            text-shadow: -0.3px 0 gray, 0 0.3px gray, 0.3px 0 gray, 0 -0.3px gray;
+            color: #f0f1ff;
+            font-weight: bold;
+        }
+
+.topnav-centered {
+    float: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.topnav-right {
+    float: right;
+}
