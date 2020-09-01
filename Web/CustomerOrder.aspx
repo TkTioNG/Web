@@ -320,6 +320,7 @@
                         </div>
                     </div>
 
+                    <h5>Current Shipment Details</h5>
                     <div id="shipping_details" runat="server"></div>
 
                     <div style=" padding-left: 50px; padding-right: 50px;">                        
@@ -330,7 +331,7 @@
                             Hide
                         </button>
                         <div id="shipmentTimestamp" style="display: none;" class="btn-hiding">
-                            <h5>Order Changes Log</h5>
+                            <h5>Shipment Changes Log</h5>
                             <table class="table">
                                 <thead>
                                     <tr>
