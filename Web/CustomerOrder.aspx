@@ -164,6 +164,28 @@
             function deleteOrder() {
                 document.getElementById("status").value = "Cancel";
             }
+            function goShow() {
+                var showing = document.getElementsByClassName("btn-showing");
+                for (var i = 0; i < showing.length; i++) {
+                    showing[i].style.display = "none";
+                }
+                var hiding = document.getElementsByClassName("btn-hiding");
+                for (var i = 0; i < showing.length; i++) {
+                    hiding[i].style.display = "inline";
+                }
+                document.getElementById("orderTimestamp").style.display = "inline";
+            }
+            function notShow() {
+                var showing = document.getElementsByClassName("btn-showing");
+                for (var i = 0; i < showing.length; i++) {
+                    showing[i].style.display = "inline";
+                }
+                var hiding = document.getElementsByClassName("btn-hiding");
+                for (var i = 0; i < showing.length; i++) {
+                    hiding[i].style.display = "none";
+                }
+                document.getElementById("orderTimestamp").style.display = "none";
+            }
         </script>
 
         <style>
@@ -209,6 +231,44 @@
                     </div>
 
                     <div id="order_details" runat="server"> </div>
+
+                    <div style=" padding-left: 50px; padding-right: 50px;">                        
+                        <button type="button" id="btnShowOrder" class="btn btn-info btn-showing" onclick="goShow()" style="float: right;">
+                            Show Order Changes Log
+                        </button>
+                        <button type="button" id="btnCloseOrder" class="btn btn-info btn-hiding" onclick="notShow()" style="float: right; display: none;">
+                            Hide
+                        </button>
+                        <div id="orderTimestamp" style="display: none;" class="btn-hiding">
+                            <h5>Order Changes Log</h5>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Changes Timestamp</th>
+                                        <th>Order Status</th>
+                                        <th>Description</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>2020-09-01 13:15:48.352</td>
+                                        <td>Cancel</td>
+                                        <td>Update Status</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2020-08-30 18:26:01.452</td>
+                                        <td>Pending</td>
+                                        <td>Update Delivery Address</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2020-08-27 17:05:01.439</td>
+                                        <td>Pending</td>
+                                        <td>Created Order</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="tab-pane fade" id="shipping_info" role="tabpanel" aria-labelledby="shipping-info-tab" runat="server">

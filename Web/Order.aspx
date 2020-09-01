@@ -8,7 +8,7 @@
                 <a href="AddOrder.aspx" class="btn btn-primary btn-lg">Create New Order</a>
             </div>
             <div class="col-md-3">
-                <a href="http://www.asp.net" class="btn btn-primary btn-lg">Produce Sales Report</a>
+                <a href="SalesReport.aspx" class="btn btn-primary btn-lg">Produce Sales Report</a>
             </div>
             <div class="col-md-3">
                 <asp:Button ID="Button1" runat="server" Text="Retrieve Cancel Order" CssClass="btn btn-primary btn-lg" OnClick="Button1_Click" />
