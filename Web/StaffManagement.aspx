@@ -13,6 +13,39 @@
         </div>
     </div>
 
+    <div class="modal fade" id="tutorialModal" tabindex="-1" role="dialog" aria-labelledby="tutorialModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="tutorialModalLabel">Tutorial</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>This is the tutorial.</p>
+                    <p>This are the following that you can do for this:</p>
+                    <ol>
+                        <li>You can sleep.</li>
+                        <li>You can eat.</li>
+                        <li>You can wake.</li>
+                        <li>You can walking.</li>
+                        <li>You can traunt.</li>
+                        <li>Most importantly, you can pass the assignment.</li>
+                    </ol>
+                    <p>Hope this tutorial will help. Thanks.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button type="button" id="btnTutorial" class="btn btn-primary" style="border-radius: 50px; float: right;" data-toggle="modal" data-target="#tutorialModal">
+        ?
+    </button>
+
     <h2>Customer Order List</h2>
     <div class="form-inline my-2 my-lg-0">
         <asp:Button class="btn btn-outline-success my-2 my-sm-0" style="float: right;" OnClick="searchStaff" Text="Search" runat="server" /> 

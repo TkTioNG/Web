@@ -23,13 +23,45 @@
         </script>
 </head>
 <body>
+    <div class="modal fade" id="tutorialModal" tabindex="-1" role="dialog" aria-labelledby="tutorialModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="tutorialModalLabel">Tutorial</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>This is the tutorial.</p>
+                    <p>This are the following that you can do for this:</p>
+                    <ol>
+                        <li>You can sleep.</li>
+                        <li>You can eat.</li>
+                        <li>You can wake.</li>
+                        <li>You can walking.</li>
+                        <li>You can traunt.</li>
+                        <li>Most importantly, you can pass the assignment.</li>
+                    </ol>
+                    <p>Hope this tutorial will help. Thanks.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button type="button" id="btnTutorial" class="btn btn-primary" style="border-radius: 100px; float: right; margin-right: 30px; margin-top: 30px;" data-toggle="modal" data-target="#tutorialModal">
+        ?
+    </button>
 
     <h1>Customer Order Details</h1>
     <div id="body">
         <div class="topnav">
             <!-- Centered link -->
             <div class="topnav-centered">
-                <a href="Invoice.aspx" target="_blank">Check Invoice</a>
+                <a href="Invoice.aspx?1000000001" target="_blank">Check Invoice</a>
                 <a href="#shipping_info">Ship Order</a>
                 <a data-toggle="modal" data-target="#completeOrderModal">Complete Order</a>
                 <a data-toggle="modal" data-target="#deleteOrderModal">Delete Order</a>
