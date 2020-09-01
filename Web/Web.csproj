@@ -111,6 +111,8 @@
     <Content Include="CSS\Invoice.css" />
     <Content Include="CSS\StockProduct.css" />
     <Content Include="SalesReport.aspx" />
+    <Content Include="StaffDetails.aspx" />
+    <Content Include="StaffManagement.aspx" />
     <Content Include="StockProduct.aspx" />
     <Content Include="Store.aspx" />
     <Content Include="Order.aspx" />
@@ -196,6 +198,20 @@
     </Compile>
     <Compile Include="SalesReport.aspx.designer.cs">
       <DependentUpon>SalesReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StaffDetails.aspx.cs">
+      <DependentUpon>StaffDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StaffDetails.aspx.designer.cs">
+      <DependentUpon>StaffDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StaffManagement.aspx.cs">
+      <DependentUpon>StaffManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StaffManagement.aspx.designer.cs">
+      <DependentUpon>StaffManagement.aspx</DependentUpon>
     </Compile>
     <Compile Include="StockProduct.aspx.cs">
       <DependentUpon>StockProduct.aspx</DependentUpon>

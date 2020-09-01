@@ -53,6 +53,7 @@
                         <li><a runat="server" href="~/">Home</a></li>
                         <li><a runat="server" href="~/Order">Order</a></li>
                         <li><a runat="server" href="~/Store">Store</a></li>
+                        <li><a runat="server" href="~/StaffManagement">Staff Management</a></li>
                     </ul>
                 </div>
             </div>
