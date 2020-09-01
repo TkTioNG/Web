@@ -95,7 +95,7 @@
                         The order status has been successfully updated.
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="window.location.href='Order.aspx';">OK</button>
+                        <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="window.location.href='CustomerOrder.aspx';">OK</button>
                     </div>
                 </div>
             </div>
@@ -184,33 +184,29 @@
                             <th>Discount</th>
                             <tr>
                                 <td>
-                                    <select id="txtProduct0"  runat="server">
-                                        <optgroup label="Music & Entertainment" runat="server">
-                                            <option value="P00001" selected="selected">Oppa Gangnam Style 01</option>
-                                            <option value="P00002">Chopin Ballade No.1</option>
-                                            <option value="P00003">Rachmaninoff Piano Concerto No.2</option>
-                                            <option value="P00004">Chopin Waltz Op.64 No.2</option>
-                                            <option value="P00005">Chopin Nocturne Op.17 No.1</option>
-                                            <option value="P00006">Fantasie Impromptu - Chopin</option>
-                                            <option value="P00007">Beethoven Symphony No.5</option>
-                                            <option value="P00008">Mahler Symphony No.5</option>
-                                            <option value="P00009">Chopin Ballade No.4</option>
-                                            <option value="P00010">Chopin Etude Op.10 No.10</option>
-                                        </optgroup>
-                                        <optgroup label="Shoes & Socks" runat="server">
-                                            <option value="P00011">Dior X AJ Crossover</option>
-                                            <option value="P00012">Yezzy 100</option>
-                                            <option value="P00013">Puma Runner</option>
-                                            <option value="P00014">Good Asadi Sandals</option>
-                                            <option value="P00015">Highlight Under Armour</option>
-                                        </optgroup>
-                                        <optgroup label="Clothes & Fabrics" runat="server">
-                                            <option value="P00016">Off White AW Hoodies</option>
-                                            <option value="P00017">Stones Flower Shirt</option>
-                                            <option value="P00018">FO Spring Teens Shorts</option>
-                                            <option value="P00019">H&M Khaki Longs</option>
-                                            <option value="P00020">UNIQLO Loose Hoodies</option>
-                                        </optgroup>
+                                    <select id="txtProduct0" runat="server">
+                                        <option value="P00001" selected="selected">Oppa Gangnam Style 01</option>
+                                        <option value="P00002">Chopin Ballade No.1</option>
+                                        <option value="P00003">Rachmaninoff Piano Concerto No.2</option>
+                                        <option value="P00004">Chopin Waltz Op.64 No.2</option>
+                                        <option value="P00005">Chopin Nocturne Op.17 No.1</option>
+                                        <option value="P00006">Fantasie Impromptu - Chopin</option>
+                                        <option value="P00007">Beethoven Symphony No.5</option>
+                                        <option value="P00008">Mahler Symphony No.5</option>
+                                        <option value="P00009">Chopin Ballade No.4</option>
+                                        <option value="P00010">Chopin Etude Op.10 No.10</option>
+
+                                        <option value="P00011">Dior X AJ Crossover</option>
+                                        <option value="P00012">Yezzy 100</option>
+                                        <option value="P00013">Puma Runner</option>
+                                        <option value="P00014">Good Asadi Sandals</option>
+                                        <option value="P00015">Highlight Under Armour</option>
+
+                                        <option value="P00016">Off White AW Hoodies</option>
+                                        <option value="P00017">Stones Flower Shirt</option>
+                                        <option value="P00018">FO Spring Teens Shorts</option>
+                                        <option value="P00019">H&M Khaki Longs</option>
+                                        <option value="P00020">UNIQLO Loose Hoodies</option>
                                     </select></td>
                                 <td>
                                     <select id="txtWarehouselocation0">

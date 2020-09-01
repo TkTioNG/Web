@@ -33,22 +33,22 @@ namespace Web
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl staff_details;
 
         /// <summary>
-        /// customer control.
+        /// txtstaffid control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText customer;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText txtstaffid;
 
         /// <summary>
-        /// Text1 control.
+        /// staffname control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText Text1;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText staffname;
 
         /// <summary>
         /// contact control.
@@ -69,57 +69,66 @@ namespace Web
         protected global::System.Web.UI.HtmlControls.HtmlInputText email;
 
         /// <summary>
-        /// salesperson control.
+        /// position control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText salesperson;
+        protected global::System.Web.UI.HtmlControls.HtmlSelect position;
 
         /// <summary>
-        /// date control.
+        /// department control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl date;
+        protected global::System.Web.UI.HtmlControls.HtmlSelect department;
 
         /// <summary>
-        /// time control.
+        /// salary control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl time;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText salary;
 
         /// <summary>
-        /// Text2 control.
+        /// status control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText Text2;
+        protected global::System.Web.UI.HtmlControls.HtmlSelect status;
 
         /// <summary>
-        /// Text3 control.
+        /// workday control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText Text3;
+        protected global::System.Web.UI.HtmlControls.HtmlSelect workday;
 
         /// <summary>
-        /// Text4 control.
+        /// weekday control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText Text4;
+        protected global::System.Web.UI.HtmlControls.HtmlSelect weekday;
+
+        /// <summary>
+        /// weekend control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlSelect weekend;
     }
 }

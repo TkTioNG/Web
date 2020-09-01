@@ -23,105 +23,123 @@
     </script>
 </head>
 <body>
+    <form runat="server">
+        <h1>Staff Details</h1>
+        <div id="body" style="margin-bottom: 50px;">
+            <div class="topnav">
+                <!-- Centered link -->
+                <div class="topnav-centered">
+                    <a data-toggle="modal" data-target="#goodOrderModal">Good Attitude</a>
+                    <a data-toggle="modal" data-target="#completeOrderModal">Warn Staff</a>
+                    <a data-toggle="modal" data-target="#deleteOrderModal">Quit Staff</a>
+                </div>
 
-    <h1>Staff Details</h1>
-    <div id="body" style="margin-bottom: 50px;">
-        <div class="topnav">
-            <!-- Centered link -->
-            <div class="topnav-centered">
-                <a data-toggle="modal" data-target="#goodOrderModal">Good Attitude</a>
-                <a data-toggle="modal" data-target="#completeOrderModal">Warn Staff</a>
-                <a data-toggle="modal" data-target="#deleteOrderModal">Quit Staff</a>
+                <!-- Left-aligned links (default) -->
+                <a href="AddStaff.aspx">Add: New</a>
+
+                <!-- Right-aligned links -->
+                <div class="topnav-right">
+                    <a href="StaffManagement.aspx">Close</a>
+                </div>
             </div>
 
-            <!-- Left-aligned links (default) -->
-            <a href="#">Add: New</a>
-
-            <!-- Right-aligned links -->
-            <div class="topnav-right">
-                <a href="Order.aspx">Close</a>
-            </div>
-        </div>
-
-        <!-- Modal -->
-        <div class="modal fade" id="goodOrderModal" tabindex="-1" role="dialog" aria-labelledby="goodOrderModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="goodOrderModalLabel">Complete Order</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        Do you wish to good the order by setting the order status as "Complete"?
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
-                        <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="goodOrder()" data-toggle="modal" data-target="#updateStatusModal">Yes</button>
+            <!-- Modal -->
+            <div class="modal fade" id="goodOrderModal" tabindex="-1" role="dialog" aria-labelledby="goodOrderModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="goodOrderModalLabel">Good Attitude</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            Do you wish to set the staff status to "Working" as good attritude?
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="goodOrder()" data-toggle="modal" data-target="#updateStatusModal">Yes</button>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="modal fade" id="completeOrderModal" tabindex="-1" role="dialog" aria-labelledby="completeOrderModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="completeOrderModalLabel">Complete Order</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        Do you wish to complete the order by setting the order status as "Complete"?
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
-                        <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="completeOrder()" data-toggle="modal" data-target="#updateStatusModal">Yes</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="modal fade" id="deleteOrderModal" tabindex="-1" role="dialog" aria-labelledby="deleteOrderModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="deleteOrderModalLabel">Delete Order</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        Do you wish to delete the order by setting the order status as "Cancel"?
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
-                        <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="deleteOrder()" data-toggle="modal" data-target="#updateStatusModal">Yes</button>
+            <div class="modal fade" id="completeOrderModal" tabindex="-1" role="dialog" aria-labelledby="completeOrderModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="completeOrderModalLabel">Warn Staff</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            Do you wish to set the staff status to "Warn" as warning the staff?
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="completeOrder()" data-toggle="modal" data-target="#updateStatusModal">Yes</button>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="modal fade" id="updateStatusModal" tabindex="-1" role="dialog" aria-labelledby="updateStatusModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="updateStatusModalLabel">Update Status</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        The order status has been successfully updated.
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-primary" data-dismiss="modal">OK</button>
+            <div class="modal fade" id="deleteOrderModal" tabindex="-1" role="dialog" aria-labelledby="deleteOrderModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="deleteOrderModalLabel">Quit Staff</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            Do you wish to set the staff status to "Quit" as the staff is resignated from this company?
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="deleteOrder()" data-toggle="modal" data-target="#updateStatusModal">Yes</button>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+            <div class="modal fade" id="saveOrderModal" tabindex="-1" role="dialog" aria-labelledby="saveOrderModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="saveOrderModalLabel">Save Changes</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            Do you wish to save the changes you made?
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal" data-toggle="modal" data-target="#updateStatusModal">Yes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="updateStatusModal" tabindex="-1" role="dialog" aria-labelledby="updateStatusModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="updateStatusModalLabel">Update Status</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            The staff has been successfully updated.
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">OK</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-        <div id="filter" class="filter">
-            <form>
+            <div id="filter" class="filter">
                 <nav>
                     <div class="nav nav-tabs mb-3" id="nav-tab" role="tablist">
                         <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#order_info" role="tab" aria-controls="order_info" aria-selected="true"><strong>Staff Details</strong></a>
@@ -130,39 +148,57 @@
                 <div class="tab-content" id="nav-tabContent">
                     <div class="tab-pane fade show active" id="order_info" role="tabpanel" aria-labelledby="order-details-tab" runat="server">
                         <div id="staff_details" runat="server"></div>
-                        
+
                         <h5>Personnel</h5>
                         <div class="form-part filter-left" id="filter-left">
                             <div class="form-group">
                                 <label>Staff ID</label><br>
-                                <input id="customer" type="text" class="form-control" runat="server" name="customer" readonly>
+                                <input id="txtstaffid" type="text" class="form-control" runat="server" name="customer" readonly>
                             </div>
                             <div class="form-group">
                                 <label>Staff Name</label><br>
-                                <input id="Text1" type="text" class="form-control" runat="server" name="customer" readonly>
+                                <input id="staffname" type="text" class="form-control editable" runat="server" name="customer" readonly>
                             </div>
                             <div class="form-group">
                                 <label>Contact No</label>
-                                <input id="contact" type="text" class="form-control" runat="server" name="contact" readonly>
+                                <input id="contact" type="text" class="form-control editable" runat="server" name="contact" readonly>
                             </div>
                             <div class="form-group">
                                 <label>E-mail Address</label>
-                                <input id="email" type="text" class="form-control" runat="server" name="email" readonly>
+                                <input id="email" type="text" class="form-control editable" runat="server" name="email" readonly>
                             </div>
                         </div>
 
                         <div class="form-part filter-right" id="filter-right">
                             <div class="form-group">
                                 <label>Position</label><br>
-                                <input id="salesperson" type="text" class="form-control" runat="server" name="salesperson" readonly>
+                                <select id="position" class="form-control" runat="server">
+                                    <option value="Accountant" selected="selected">Accountant</option>
+                                    <option value="Business Admin">Business Admin</option>
+                                    <option value="Logistics Clerk">Logistics Clerk</option>
+                                    <option value="Warehouse Operator">Warehouse Operator</option>
+                                </select>
                             </div>
                             <div class="form-group">
                                 <label>Department</label>
-                                <input id="date" type="datetime" class="form-control" runat="server" name="editable" readonly>
+                                <select id="department" class="form-control" runat="server">
+                                    <option value="Accounting Department" selected="selected">Accounting Department</option>
+                                    <option value="Operation Department">Operation Department</option>
+                                    <option value="Logistics Department">Logistics Department</option>
+                                    <option value="Inventory Department">Inventory Department</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Salary</label>
+                                <input id="salary" type="text" class="form-control editable" runat="server" name="email" readonly>
                             </div>
                             <div class="form-group">
                                 <label>Staff Status</label>
-                                <input id="time" type="time" class="form-control" runat="server" name="editable" readonly>
+                                <select id="status" class="form-control" runat="server">
+                                    <option value="Working" selected="selected">Working</option>
+                                    <option value="Warn">Warn</option>
+                                    <option value="Quit">Quit</option>
+                                </select>
                             </div>
                         </div>
 
@@ -172,78 +208,90 @@
                             <div class="form-part filter-left" id="filter-left">
                                 <div class="form-group">
                                     <label>Working Day</label><br>
-                                    <input id="Text2" type="text" class="form-control" runat="server" name="customer" readonly>
+                                    <select id="workday" class="form-control" runat="server">
+                                        <option value="Mon - Fri" selected="selected">Mon - Fri</option>
+                                        <option value="Mon - Sat">Mon - Sat</option>
+                                    </select>
                                 </div>
                                 <div class="form-group">
                                     <label>Weekday Working Hour</label><br>
-                                    <input id="Text3" type="text" class="form-control" runat="server" name="customer" readonly>
+                                    <select id="weekday" class="form-control" runat="server">
+                                        <option value="9:00 AM - 6:00 PM" selected="selected">9:00 AM - 6:00 PM</option>
+                                        <option value="8:30 AM - 5:30 PM">8:30 AM - 5:30 PM</option>
+                                        <option value="10:00 AM - 6:30 PM">10:00 AM - 6:30 PM</option>
+                                    </select>
                                 </div>
                             </div>
 
                             <div class="form-part filter-right" id="filter-right">
                                 <div class="form-group">
                                     <label>Weekend Working Hour</label>
-                                    <input id="Text4" type="text" class="form-control" runat="server" name="contact" readonly>
+                                    <select id="weekend" class="form-control" runat="server">
+                                        <option value="9:00 AM - 1:00 PM" selected="selected">9:00 AM - 1:00 PM</option>
+                                        <option value="9:00 AM - 5:00 PM">9:00 AM - 5:00 PM</option>
+                                        <option value="N/A">N/A</option>
+                                    </select>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </form>
-        </div>
+            </div>
 
-        <script type="text/javascript">
-            function canEdit() {
-                var editable = document.getElementsByClassName("editable");
-                for (var i = 0; i < editable.length; i++) {
-                    editable[i].readOnly = false;
+            <script type="text/javascript">
+                function canEdit() {
+                    var editable = document.getElementsByClassName("editable");
+                    for (var i = 0; i < editable.length; i++) {
+                        editable[i].readOnly = false;
+                    }
+                    document.getElementById("btnEdit").style.display = "none";
+                    document.getElementById("btnCancel").style.display = "inline";
+                    document.getElementById("btnSave").style.display = "inline";
                 }
-                document.getElementById("btnEdit").style.display = "none";
-                document.getElementById("btnCancel").style.display = "inline";
-                document.getElementById("btnSave").style.display = "inline";
-            }
-            function cannotEdit() {
-                var editable = document.getElementsByClassName("editable");
-                for (var i = 0; i < editable.length; i++) {
-                    editable[i].readOnly = true;
+                function cannotEdit() {
+                    var editable = document.getElementsByClassName("editable");
+                    for (var i = 0; i < editable.length; i++) {
+                        editable[i].readOnly = true;
+                    }
+                    document.getElementById("btnEdit").style.display = "inline";
+                    document.getElementById("btnCancel").style.display = "none";
+                    document.getElementById("btnSave").style.display = "none";
                 }
-                document.getElementById("btnEdit").style.display = "inline";
-                document.getElementById("btnCancel").style.display = "none";
-                document.getElementById("btnSave").style.display = "none";
-            }
-            function completeOrder() {
-                document.getElementById("status").value = "Complete";
-            }
-            function deleteOrder() {
-                document.getElementById("status").value = "Cancel";
-            }
-        </script>
+                function completeOrder() {
+                    document.getElementById("status").value = "Warn";
+                }
+                function deleteOrder() {
+                    document.getElementById("status").value = "Quit";
+                }
+            </script>
 
-        <style>
-            .clickable-data:hover {
-                cursor: pointer;
-                background-color: antiquewhite;
-            }
-        </style>
+            <style>
+                .clickable-data:hover {
+                    cursor: pointer;
+                    background-color: antiquewhite;
+                }
+            </style>
 
-        <script>
-            jQuery(document).ready(function ($) {
-                $(".clickable-data").click(function () {
-                    window.location = $(this).data("href");
+            <script>
+                jQuery(document).ready(function ($) {
+                    $(".clickable-data").click(function () {
+                        window.location = $(this).data("href");
+                    });
                 });
-            });
-        </script>
+            </script>
 
-        <button type="button" id="btnEdit" class="btn btn-primary" onclick="canEdit()">
-            Edit
-        </button>
-        <button type="button" id="btnCancel" class="btn btn-danger" style="display: none" onclick="cannotEdit()">
-            Cancel
-        </button>
-        <button type="button" id="btnSave" class="btn btn-success" style="display: none" onclick="cannotEdit()">
-            Save
-        </button>
-    </div>
-
+            <div style="margin: auto; text-align: center;">
+                <button type="button" id="btnEdit" class="btn btn-primary" onclick="canEdit()">
+                    Edit
+                </button>
+                <button type="button" id="btnCancel" class="btn btn-danger" style="display: none" onclick="cannotEdit()">
+                    Cancel
+                </button>
+                <button type="button" id="btnSave" class="btn btn-success" style="display: none" onclick="cannotEdit()" data-toggle="modal" data-target="#saveOrderModal">
+                    Save
+                </button>
+            </div>
+        </div>
+    </form>
 </body>
 </html>

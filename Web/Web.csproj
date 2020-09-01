@@ -106,6 +106,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="AddOrder.aspx" />
+    <Content Include="AddStaff.aspx" />
     <Content Include="AddStockProduct.aspx" />
     <Content Include="CSS\AddOrder.css" />
     <Content Include="CSS\Invoice.css" />
@@ -183,6 +184,13 @@
     </Compile>
     <Compile Include="AddOrder.aspx.designer.cs">
       <DependentUpon>AddOrder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddStaff.aspx.cs">
+      <DependentUpon>AddStaff.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddStaff.aspx.designer.cs">
+      <DependentUpon>AddStaff.aspx</DependentUpon>
     </Compile>
     <Compile Include="AddStockProduct.aspx.cs">
       <DependentUpon>AddStockProduct.aspx</DependentUpon>

@@ -5,7 +5,7 @@
         <h1>Staff Management</h1>
         <div class="row">
             <div class="col-md-3">
-                <a href="AddOrder.aspx" class="btn btn-primary btn-lg">Add New Staff</a>
+                <a href="AddStaff.aspx" class="btn btn-primary btn-lg">Add New Staff</a>
             </div>
             <div class="col-md-3">
                 <asp:Button ID="btnBadAtt" runat="server" Text="View Bad Attitude Staff" CssClass="btn btn-primary btn-lg" OnClick="btnBadAtt_Click" />
