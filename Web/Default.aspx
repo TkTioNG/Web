@@ -5,7 +5,7 @@
     <div class="jumbotron">
         <h1>Ordering and Inventory System</h1>
         <p class="lead">This system contains Order Sub-system, Store sub-system and Staff management.</p>
-        <p><a href="CustomerOrder.aspx" class="btn btn-primary btn-lg">Go to Customer Order &raquo;</a></p>
+        <p><a href="Order.aspx" class="btn btn-primary btn-lg">Go to Customer Order &raquo;</a></p>
     </div>
 
     <div class="row">
@@ -15,7 +15,7 @@
                 Input Order, Modify Order, Cancel Order, Generate Order in PDF, retrieve cancelled order and produce sales report.
             </p>
             <p>
-                <a class="btn btn-default" href="CustomerOrder.aspx">Go to Customer Order &raquo;</a>
+                <a class="btn btn-default" href="Order.aspx">Go to Order &raquo;</a>
             </p>
         </div>
         <div class="col-md-5">

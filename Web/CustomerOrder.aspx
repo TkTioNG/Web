@@ -174,6 +174,7 @@
                     hiding[i].style.display = "inline";
                 }
                 document.getElementById("orderTimestamp").style.display = "inline";
+                document.getElementById("shipmentTimestamp").style.display = "inline";
             }
             function notShow() {
                 var showing = document.getElementsByClassName("btn-showing");
@@ -185,6 +186,7 @@
                     hiding[i].style.display = "none";
                 }
                 document.getElementById("orderTimestamp").style.display = "none";
+                document.getElementById("shipmentTimestamp").style.display = "none";
             }
         </script>
 
@@ -319,6 +321,44 @@
                     </div>
 
                     <div id="shipping_details" runat="server"></div>
+
+                    <div style=" padding-left: 50px; padding-right: 50px;">                        
+                        <button type="button" id="btnShowShipment" class="btn btn-info btn-showing" onclick="goShow()" style="float: right;">
+                            Show Order Changes Log
+                        </button>
+                        <button type="button" id="btnCloseShipment" class="btn btn-info btn-hiding" onclick="notShow()" style="float: right; display: none;">
+                            Hide
+                        </button>
+                        <div id="shipmentTimestamp" style="display: none;" class="btn-hiding">
+                            <h5>Order Changes Log</h5>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Changes Timestamp</th>
+                                        <th>Shipment Location</th>
+                                        <th>Description</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>2020-09-01 13:15:48.352</td>
+                                        <td>Johor, Malaysia</td>
+                                        <td>Dispatch to the Johor Warehouse</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2020-08-30 18:26:01.452</td>
+                                        <td>South China Sea</td>
+                                        <td>On the Ocean Heading to Malaysia Titanic Cruise Ship</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2020-08-27 17:05:01.439</td>
+                                        <td>Yiwu, China</td>
+                                        <td>Item Collection on Yiwu Warehouse</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
 
                 </div>
                 <div class="tab-pane fade" id="payment_info" role="tabpanel" aria-labelledby="payment-info-tab">
