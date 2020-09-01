@@ -46,7 +46,7 @@
         ?
     </button>
 
-    <h2>Customer Order List</h2>
+    <h2>Staff List</h2>
     <div class="form-inline my-2 my-lg-0">
         <asp:Button class="btn btn-outline-success my-2 my-sm-0" style="float: right;" OnClick="searchStaff" Text="Search" runat="server" /> 
         <asp:TextBox ID="searchbox" runat="server" CssClass="form-control mr-sm-2" style="float: right; margin-right: 20px;" AutoPostBack="true"></asp:TextBox>

@@ -3,7 +3,7 @@
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
     <div class="jumbotron">
-        <h1>Ordering and Inventory System</h1>
+        <h1>Millos Trading</h1>
         <p class="lead">This system contains Order Sub-system, Store sub-system and Staff management.</p>
         <p><a href="Order.aspx" class="btn btn-primary btn-lg">Go to Customer Order &raquo;</a></p>
     </div>

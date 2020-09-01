@@ -4,7 +4,7 @@
     <link href="CSS/CustomerOrder.css" rel="stylesheet" type="text/css" />
 
     <div class="jumbotron jumbotron-fluid">
-        <h1>Order Sub-System</h1>
+        <h1 style="text-align:left;">Store Sub-System</h1>
         <div class="row">
             <div class="col-md-3">
                 <a href="AddStockProduct.aspx" class="btn btn-primary btn-lg">Add New Product</a>
