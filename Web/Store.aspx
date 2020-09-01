@@ -7,7 +7,7 @@
         <h1>Order Sub-System</h1>
         <div class="row">
             <div class="col-md-3">
-                <a href="http://www.asp.net" class="btn btn-primary btn-lg">Add New Product</a>
+                <a href="AddStockProduct.aspx" class="btn btn-primary btn-lg">Add New Product</a>
             </div>
         </div>
     </div>
