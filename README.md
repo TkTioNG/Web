@@ -23,18 +23,25 @@ This web application is developed for BACS3003 Software Evolution and Maintenanc
 
 ## Screenshot Examples
 Below are some of the web page screenshot examples.
+
 ***Main Page***
 ![enter image description here](screenshot/mainpage.png)
+
 ***Order Page***
 ![enter image description here](screenshot/orderpage.png)
+
 ***Order Details Page***
 ![enter image description here](screenshot/orderdetailspage.png)
+
 ***Store Page***
 ![enter image description here](screenshot/storepage.png)
+
 ***Product Details Page***
 ![enter image description here](screenshot/addproductpage.png)
+
 ***Staff Management Page***
 ![enter image description here](screenshot/staffpage.png)
+
 ***Tutorial Box***
 ![enter image description here](screenshot/tutorial.png)
 
